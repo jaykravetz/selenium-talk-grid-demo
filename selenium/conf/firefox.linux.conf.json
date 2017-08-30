@@ -1,0 +1,23 @@
+{
+  "capabilities":
+  [
+    {
+      "browserName": "firefox",
+      "maxInstances": 5,
+      "seleniumProtocol": "WebDriver",
+      "platform": "LINUX",
+      "webdriver.firefox.driver": "/vagrant/selenium/bin/geckodriver"
+    }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+  "maxSession": 5,
+  "port": 5557,
+  "host": "192.168.33.10",
+  "register": true,
+  "registerCycle": 5000,
+  "hubPort": 4444,
+  "hubHost": "192.168.56.1",
+  "hub": "http://192.168.56.1:4444/grid/register/",
+  "timeout": 600000,
+  "browserTimeout": 600000
+}
